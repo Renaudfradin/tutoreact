@@ -1,6 +1,8 @@
 import React from "react";
 import CheckUserIs from "../checkUserIs/checkUserIs";
 import Post from "../Post/Post";
+import Button from '@mui/material/Button';
+import BasicCard from "../PostMaterialUi/PostmaterialUI";
 import './testcomposent.css'
 
 
@@ -48,6 +50,17 @@ function Test(props){
           </Post>
         )}
       </div>
+      <Button variant="contained">hello worrld</Button>
+      {/* retur post on material UI */}
+      {postsTest.map((post)=>
+        <BasicCard
+          key={post.id} 
+          name={post.name}
+          id={post.id}
+        > 
+        </BasicCard>
+      )}
+      
     </div>
     
   );
