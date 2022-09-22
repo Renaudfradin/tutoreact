@@ -32,7 +32,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <Test2></Test2>
+      <Test2 name2='ddddddd'></Test2>
     </div>
   )
 }
