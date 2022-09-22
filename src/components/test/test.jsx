@@ -3,10 +3,12 @@ import CheckUserIs from "../checkUserIs/checkUserIs";
 import Post from "../Post/Post";
 import Button from '@mui/material/Button';
 import BasicCard from "../PostMaterialUi/PostmaterialUI";
-import './testcomposent.css'
+import FormPost from "../FormPost/FormPost";
+import FilterandProductTable from "../FilterandProductTable/FilterandProductTable";
+import './test.css'
 
 
-function Test(props){
+const Test = (props) => {
   const users = "hello";
   const date = new Date().toLocaleTimeString();
   const numbers = [1,2,3,4,5,6,7,8,9,10,11];
@@ -41,7 +43,7 @@ function Test(props){
       </div>
 
       {/* map on postsTest and post conponents in return */}
-      <div>
+      <div className="Post">
         {postsTest.map((post)=> 
           <Post
             key={post.id} 
@@ -49,8 +51,8 @@ function Test(props){
             id={post.id}>
           </Post>
         )}
-      </div>
-      <Button variant="contained">hello worrld</Button>
+
+      <Button variant="contained">hello worrld UI</Button>
       {/* retur post on material UI */}
       {postsTest.map((post)=>
         <BasicCard
@@ -60,9 +62,20 @@ function Test(props){
         > 
         </BasicCard>
       )}
-      
+
+      </div>
+
+      <div>
+        <FormPost> </FormPost>
+      </div>
+
+      <div>
+        <FilterandProductTable> </FilterandProductTable>
+      </div>
+
     </div>
     
   );
 }
+
 export default Test

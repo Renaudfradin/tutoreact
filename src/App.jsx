@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Test from './components/testcomposent/testcomposent'
+import Test from './components/test/test'
 import Test2 from './components/composentClasse/composentClasse'
 import './App.css'
 
 function App() {
+  //hook
   const [count, setCount] = useState(0)
 
   return (
