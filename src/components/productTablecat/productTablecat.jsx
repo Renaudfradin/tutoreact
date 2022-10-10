@@ -1,9 +1,9 @@
 import React from "react";
 
-function productTablecat(){
-    return(
-        <h2></h2>
-    );
+function productTablecat(props){
+  return(
+    <h2>{props.category}</h2>
+  );
 }
 
 export default productTablecat;

@@ -6,10 +6,16 @@ import ProductTablecat from "../productTablecat/productTablecat";
 
 function productTableandCat(){
   const Sports = SportData;
+  const lastCtaegory = [];
   return (
     <div>
       {Sports.map((sport) =>
         <div>
+          {/* {if(lastCtaegory != sport.category){
+
+          }else{
+            return ""
+          }} */}
           <ProductTablecat
             key={sport.id}
             category={sport.category}
