@@ -64,15 +64,6 @@ const Test = (props) => {
       )}
 
       </div>
-
-      <div>
-        <FormPost> </FormPost>
-      </div>
-
-      <div>
-        <FilterandProductTable> </FilterandProductTable>
-      </div>
-
     </div>
     
   );
